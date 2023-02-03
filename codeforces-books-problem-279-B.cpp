@@ -23,6 +23,11 @@
 // outputCopy
 // 1
 
+//prefix sum will always be sorted so u can use binary search over it 
+
+100000 1 // not sorted // arr
+100000 100001 // sorted  // prefix sum of arr
+  
 
 
 
