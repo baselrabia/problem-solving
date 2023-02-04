@@ -12,6 +12,16 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 using namespace std;
 
+int getPower(int i){
+    int res= 1;
+    while(i--){
+        res *=2;
+    }
+
+    return res;
+}
+
+
 int main()
 {
 
@@ -36,8 +46,11 @@ int main()
 
 
     for(int i : flip){
-        num = std::pow(2, i);
-        n = num | n;
+        num = 1 << i;
+        // that will get the mask index
+        // then by xor u will get the change;
+        
+        n = n ^ num;
             //cout<< num << " " <<n <<endl;
 
         // 0000 1000
